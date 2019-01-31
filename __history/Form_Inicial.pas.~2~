@@ -1,0 +1,54 @@
+unit Form_Inicial;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
+  FMX.Objects, FMX.Controls.Presentation, FMX.Layouts;
+
+type
+  TFrm_Inicial = class(TForm)
+    Layout_wizard: TLayout;
+    Layout_Slide1: TLayout;
+    Image1: TImage;
+    Label1: TLabel;
+    Label2: TLabel;
+    Layout2: TLayout;
+    Label3: TLabel;
+    Label4: TLabel;
+    Layout3: TLayout;
+    Layout4: TLayout;
+    Circle1: TCircle;
+    Circle2: TCircle;
+    Circle3: TCircle;
+    Layout_Slide2: TLayout;
+    Image2: TImage;
+    Label5: TLabel;
+    Label6: TLabel;
+    Layout_Slide3: TLayout;
+    Image3: TImage;
+    Label7: TLabel;
+    Label8: TLabel;
+    Layout_Fundo: TLayout;
+    Layout1: TLayout;
+    Image4: TImage;
+    Label9: TLabel;
+    Label10: TLabel;
+    Button1: TButton;
+    Button2: TButton;
+    StyleBook1: TStyleBook;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Frm_Inicial: TFrm_Inicial;
+
+implementation
+
+{$R *.fmx}
+
+end.
