@@ -1,11 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2019/01/30 21:43:37.930,=C:\Users\Gabriel\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2019/01/30 22:17:43.817,C:\GABRIEL\Projetos\Sistemas\Mobile360\Form_Inicial.fmx=C:\Users\Gabriel\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
-    <Transaction>2019/01/30 22:17:43.817,C:\GABRIEL\Projetos\Sistemas\Mobile360\Form_Inicial.pas=C:\Users\Gabriel\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2019/01/30 22:17:52.416,C:\GABRIEL\Projetos\Sistemas\Mobile360\Pedidos.dproj=C:\Users\Gabriel\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+	<Transactions>
+    <Transaction>2019/01/30 21:43:37.000.930,=C:\Users\Gabriel\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/01/30 22:17:43.000.817,C:\GABRIEL\Projetos\Sistemas\Mobile360\Form_Inicial.pas=C:\Users\Gabriel\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/01/30 22:17:43.000.817,C:\GABRIEL\Projetos\Sistemas\Mobile360\Form_Inicial.fmx=C:\Users\Gabriel\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2019/01/30 22:17:52.000.416,C:\GABRIEL\Projetos\Sistemas\Mobile360\Pedidos.dproj=C:\Users\Gabriel\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2019/02/01 17:33:03.000.956,=C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\Unit1.pas</Transaction>
+    <Transaction>2019/02/01 17:33:12.000.868,C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\Form_MenuPrincipal.pas=C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\Unit1.pas</Transaction>
+    <Transaction>2019/02/01 17:33:12.000.868,C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\Form_MenuPrincipal.fmx=C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\Unit1.fmx</Transaction>
   </Transactions>
-  <ActiveMobileDevice>   <NoProfile iOSSimulator="iPhone5" Android="Delphi1"/>
-  </ActiveMobileDevice>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5" Android="Delphi1"/>
+	</ActiveMobileDevice>
 </BorlandProject>

@@ -41,6 +41,8 @@ type
     procedure FormShow(Sender: TObject);
     procedure lblProximoClick(Sender: TObject);
     procedure lblVoltarClick(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
   private
   var
     nSlide:integer;
@@ -57,6 +59,16 @@ implementation
 
 {$R *.fmx}
 
+procedure TFrm_Inicial.Button1Click(Sender: TObject);
+begin
+//
+end;
+
+procedure TFrm_Inicial.Button2Click(Sender: TObject);
+begin
+///
+end;
+
 procedure TFrm_Inicial.FormShow(Sender: TObject);
 begin
  nSlide:= 1;
@@ -65,7 +77,7 @@ end;
 
 procedure TFrm_Inicial.lblProximoClick(Sender: TObject);
 begin
- if nSlide>= 3 then
+ if nSlide>= 4 then
   exit;
  inc(nSlide);
  TrataSlide(nSlide);
@@ -83,37 +95,48 @@ procedure TFrm_Inicial.TrataSlide(Slide:integer);
 begin
  case Slide of
  1: begin
+      Layout_wizard.Visible:= true;
+      Layout_Fundo.Visible:= false;
+
       Layout_Slide1.Visible:= true;
       Layout_Slide2.Visible:= false;
       Layout_Slide3.Visible:= false;
 
-      Circle1.Fill.Color:= clGreen;
-      Circle2.Fill.Color:= clSilver;
-      Circle3.Fill.Color:= clSilver;
+      Circle1.Fill.Color:= TAlphaColorRec.Dodgerblue;
+      Circle2.Fill.Color:= TAlphaColorRec.Silver;
+      Circle3.Fill.Color:= TAlphaColorRec.Silver;
 
       lblVoltar.Visible:= false;
     end;
  2: begin
+      Layout_wizard.Visible:= true;
+      Layout_Fundo.Visible:= false;
       Layout_Slide1.Visible:= false;
       Layout_Slide2.Visible:= true;
       Layout_Slide3.Visible:= false;
 
-      Circle1.Fill.Color:= clSilver;
-      Circle2.Fill.Color:= clGreen;
-      Circle3.Fill.Color:= clSilver;
+      Circle1.Fill.Color:= TAlphaColorRec.Silver;
+      Circle2.Fill.Color:= TAlphaColorRec.Dodgerblue;
+      Circle3.Fill.Color:= TAlphaColorRec.Silver;
 
       lblVoltar.Visible:= true;
     end;
  3: begin
+      Layout_wizard.Visible:= true;
+      Layout_Fundo.Visible:= false;
       Layout_Slide1.Visible:= false;
       Layout_Slide2.Visible:= false;
       Layout_Slide3.Visible:= true;
 
-      Circle1.Fill.Color:= clSilver;
-      Circle2.Fill.Color:= clSilver;
-      Circle3.Fill.Color:= clGreen;
+      Circle1.Fill.Color:= TAlphaColorRec.Silver;
+      Circle2.Fill.Color:= TAlphaColorRec.Silver;
+      Circle3.Fill.Color:= TAlphaColorRec.Dodgerblue;
 
       lblVoltar.Visible:= true;
+    end;
+ 4: begin
+      Layout_Fundo.Visible:= true;
+      Layout_wizard.Visible:= false;
     end;
  end;
 
