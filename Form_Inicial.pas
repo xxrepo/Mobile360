@@ -31,8 +31,8 @@ type
     Image4: TImage;
     Label9: TLabel;
     Label10: TLabel;
-    Button1: TButton;
-    Button2: TButton;
+    BtnCriarNovaConta: TButton;
+    btnJaTenhoCadastro: TButton;
     StyleBook1: TStyleBook;
     Layout4: TLayout;
     Circle1: TCircle;
@@ -41,8 +41,8 @@ type
     procedure FormShow(Sender: TObject);
     procedure lblProximoClick(Sender: TObject);
     procedure lblVoltarClick(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
-    procedure Button1Click(Sender: TObject);
+    procedure btnJaTenhoCadastroClick(Sender: TObject);
+    procedure BtnCriarNovaContaClick(Sender: TObject);
   private
   var
     nSlide:integer;
@@ -59,14 +59,20 @@ implementation
 
 {$R *.fmx}
 
-procedure TFrm_Inicial.Button1Click(Sender: TObject);
+uses Form_Login;
+
+procedure TFrm_Inicial.BtnCriarNovaContaClick(Sender: TObject);
 begin
-//
+ application.CreateForm(TFrm_Login,Frm_Login);
+ Frm_Login.TabControl.ActiveTab:= Frm_Login.TabCadastro;
+ Frm_Login.Show;
 end;
 
-procedure TFrm_Inicial.Button2Click(Sender: TObject);
+procedure TFrm_Inicial.btnJaTenhoCadastroClick(Sender: TObject);
 begin
-///
+ application.CreateForm(TFrm_Login,Frm_Login);
+ Frm_Login.TabControl.ActiveTab:= Frm_Login.TabLogin;
+ Frm_Login.Show;
 end;
 
 procedure TFrm_Inicial.FormShow(Sender: TObject);
@@ -103,8 +109,8 @@ begin
       Layout_Slide3.Visible:= false;
 
       Circle1.Fill.Color:= TAlphaColorRec.Dodgerblue;
-      Circle2.Fill.Color:= TAlphaColorRec.Silver;
-      Circle3.Fill.Color:= TAlphaColorRec.Silver;
+      Circle2.Fill.Color:= $FF6F6F6F;
+      Circle3.Fill.Color:= $FF6F6F6F;
 
       lblVoltar.Visible:= false;
     end;
@@ -115,9 +121,9 @@ begin
       Layout_Slide2.Visible:= true;
       Layout_Slide3.Visible:= false;
 
-      Circle1.Fill.Color:= TAlphaColorRec.Silver;
+      Circle1.Fill.Color:= $FF6F6F6F;
       Circle2.Fill.Color:= TAlphaColorRec.Dodgerblue;
-      Circle3.Fill.Color:= TAlphaColorRec.Silver;
+      Circle3.Fill.Color:= $FF6F6F6F;
 
       lblVoltar.Visible:= true;
     end;
@@ -128,8 +134,8 @@ begin
       Layout_Slide2.Visible:= false;
       Layout_Slide3.Visible:= true;
 
-      Circle1.Fill.Color:= TAlphaColorRec.Silver;
-      Circle2.Fill.Color:= TAlphaColorRec.Silver;
+      Circle1.Fill.Color:= $FF6F6F6F;
+      Circle2.Fill.Color:= $FF6F6F6F;
       Circle3.Fill.Color:= TAlphaColorRec.Dodgerblue;
 
       lblVoltar.Visible:= true;
