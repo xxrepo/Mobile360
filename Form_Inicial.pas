@@ -97,6 +97,8 @@ uses Form_Login, Form_Principal;
 
 procedure TFrm_Inicial.AnteriorUpdate(Sender: TObject);
 begin
+//23
+
  if Proximo.Tab = Tab4 then
    exit;
 
