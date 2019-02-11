@@ -1,0 +1,154 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 538
+  ClientWidth = 416
+  Fill.Color = claNull
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object BackgroundRectangle: TRectangle
+    Align = Contents
+    Fill.Color = claWhitesmoke
+    Sides = []
+    Size.Width = 416.000000000000000000
+    Size.Height = 538.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object TitleLabel: TLabel
+    Align = Top
+    StyledSettings = [Family, Style, FontColor]
+    Size.Width = 416.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 24.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'Location Test'
+    TabOrder = 0
+  end
+  object BottomLayout: TLayout
+    Align = Bottom
+    Padding.Left = 4.000000000000000000
+    Padding.Top = 4.000000000000000000
+    Padding.Right = 4.000000000000000000
+    Padding.Bottom = 4.000000000000000000
+    Position.Y = 480.000000000000000000
+    Size.Width = 416.000000000000000000
+    Size.Height = 58.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object PauseUpdatesButton: TButton
+      Action = PauseUpdatesAction
+      Align = Center
+      Enabled = True
+      ImageIndex = -1
+      Size.Width = 160.000000000000000000
+      Size.Height = 39.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+    end
+  end
+  object TabControl: TTabControl
+    Align = Client
+    Size.Width = 416.000000000000000000
+    Size.Height = 439.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 1
+    TabOrder = 2
+    TabPosition = PlatformDefault
+    OnChange = TabControlChange
+    Sizes = (
+      416s
+      413s
+      416s
+      413s)
+    object MessagesTab: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 72.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Messages'
+      ExplicitSize.cx = 72.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object MessagesMemo: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Align = Client
+        Margins.Left = 4.000000000000000000
+        Margins.Top = 4.000000000000000000
+        Margins.Right = 4.000000000000000000
+        Margins.Bottom = 4.000000000000000000
+        Size.Width = 408.000000000000000000
+        Size.Height = 405.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 404.000000000000000000
+        Viewport.Height = 401.000000000000000000
+      end
+    end
+    object LogTab: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 40.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Log'
+      ExplicitSize.cx = 40.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object LogMemo: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Align = Client
+        Margins.Left = 4.000000000000000000
+        Margins.Top = 4.000000000000000000
+        Margins.Right = 4.000000000000000000
+        Size.Width = 408.000000000000000000
+        Size.Height = 360.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 404.000000000000000000
+        Viewport.Height = 356.000000000000000000
+      end
+      object RefreshLogButton: TButton
+        Action = RefreshLogAction
+        Align = Bottom
+        Enabled = True
+        ImageIndex = -1
+        Margins.Left = 4.000000000000000000
+        Margins.Top = 4.000000000000000000
+        Margins.Right = 4.000000000000000000
+        Margins.Bottom = 4.000000000000000000
+        Position.X = 4.000000000000000000
+        Position.Y = 368.000000000000000000
+        Size.Width = 408.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+      end
+    end
+  end
+  object ActionList: TActionList
+    Left = 201
+    Top = 205
+    object PauseUpdatesAction: TAction
+      Text = 'Pause Updates'
+      OnExecute = PauseUpdatesActionExecute
+    end
+    object RefreshLogAction: TAction
+      Text = 'Refresh'
+      OnExecute = RefreshLogActionExecute
+    end
+  end
+end

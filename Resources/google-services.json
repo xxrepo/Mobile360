@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "4917295580",
+    "firebase_url": "https://pedidosapp-e0877.firebaseio.com",
+    "project_id": "pedidosapp-e0877",
+    "storage_bucket": "pedidosapp-e0877.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:4917295580:android:54190368e8a1ccc4",
+        "android_client_info": {
+          "package_name": "com.br.pedidos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "4917295580-2b0el2g3ejktel6sl615oa84f8m3kjnd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlW1ZGLVHJzq9DfHH0CyTfDORgMixe2Ws"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

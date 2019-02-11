@@ -78,9 +78,6 @@ type
     procedure AnteriorUpdate(Sender: TObject);
     procedure TabControlChange(Sender: TObject);
   private
-  var
-    nSlide:integer;
-    procedure TrataSlide(Slide:integer);
 
   public
     { Public declarations }
@@ -131,8 +128,6 @@ end;
 procedure TFrm_Inicial.FormShow(Sender: TObject);
 begin
  TabControl.TabPosition:= TTabPosition.None;
- nSlide:= 1;
- TrataSlide(nSlide);
 end;
 
 procedure TFrm_Inicial.lblProximoClick(Sender: TObject);
@@ -184,44 +179,5 @@ begin
  if TabControl.ActiveTab = tab4 then
   self.Touch.GestureManager:= nil;
 end;
-
-procedure TFrm_Inicial.TrataSlide(Slide:integer);
-begin
-{ case Slide of
- 1: begin
-    end;
- 2: begin
-      Layout_wizard.Visible:= true;
-      Layout_Fundo.Visible:= false;
-      Layout_Slide1.Visible:= false;
-      Layout_Slide2.Visible:= true;
-      Layout_Slide3.Visible:= false;
-
-      Circle1.Fill.Color:= $FF6F6F6F;
-      Circle2.Fill.Color:= TAlphaColorRec.Dodgerblue;
-      Circle3.Fill.Color:= $FF6F6F6F;
-
-      lblVoltar.Visible:= true;
-    end;
- 3: begin
-      Layout_wizard.Visible:= true;
-      Layout_Fundo.Visible:= false;
-      Layout_Slide1.Visible:= false;
-      Layout_Slide2.Visible:= false;
-      Layout_Slide3.Visible:= true;
-
-      Circle1.Fill.Color:= $FF6F6F6F;
-      Circle2.Fill.Color:= $FF6F6F6F;
-      Circle3.Fill.Color:= TAlphaColorRec.Dodgerblue;
-
-      lblVoltar.Visible:= true;
-    end;
- 4: begin
-      Layout_Fundo.Visible:= true;
-      Layout_wizard.Visible:= false;
-    end;
- end; }
-end;
-
 
 end.

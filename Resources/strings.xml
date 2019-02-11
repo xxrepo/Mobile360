@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- Insert values from google-services.json for each of the following entries. The location for each entry from google-services.json appears as a comment following the entry -->
+  <string name="default_web_client_id" translatable="false">4917295580-2b0el2g3ejktel6sl615oa84f8m3kjnd.apps.googleusercontent.com</string> <!-- client\oauth_client\client_id -->
+  <string name="firebase_database_url" translatable="false">https://pedidosapp-e0877.firebaseio.com</string> <!-- project_info\firebase_url -->
+  <string name="gcm_defaultSenderId" translatable="false">4917295580</string> <!-- project_info\project_number -->
+  <string name="google_api_key" translatable="false">AIzaSyDlW1ZGLVHJzq9DfHH0CyTfDORgMixe2Ws</string> <!-- client\api_key\current_key -->
+  <string name="google_app_id" translatable="false">1:4917295580:android:54190368e8a1ccc4</string> <!-- client\client_info\mobilesdk_app_id -->
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDlW1ZGLVHJzq9DfHH0CyTfDORgMixe2Ws</string> <!-- client\api_key\current_key -->
+  <string name="google_storage_bucket" translatable="false">pedidosapp-e0877.appspot.com</string> <!-- project_info\storage_bucket -->
+</resources>
