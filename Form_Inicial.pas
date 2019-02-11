@@ -96,7 +96,6 @@ procedure TFrm_Inicial.AnteriorUpdate(Sender: TObject);
 begin
  if Proximo.Tab = Tab4 then
    exit;
-
  if TabControl.ActiveTab = Tab1 then
   Anterior.Tab:= nil
  else

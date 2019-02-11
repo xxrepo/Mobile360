@@ -3,11 +3,17 @@ unit Form_Principal;
 interface
 
 uses
+  {$IFDEF ANDROID}
+  DW.Firebase.Messaging,
+  {$ENDIF}
+
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Layouts,
   FMX.Objects, FMX.Controls.Presentation, FMX.StdCtrls, FMX.Edit,
   FMX.ListView.Types, FMX.ListView.Appearances, FMX.ListView.Adapters.Base,
-  FMX.ListView;
+  FMX.ListView, IPPeerClient, REST.Backend.PushTypes, System.JSON,
+  System.PushNotification, Data.Bind.Components, Data.Bind.ObjectScope,
+  REST.Backend.BindSource, REST.Backend.PushDevice;
 
 type
   TFrm_Principal = class(TForm)
@@ -45,6 +51,17 @@ type
   public
     const OpacidadeSemFoco = 0.2;
     procedure SelecionaTab(Tab:integer);
+
+  //push
+  {$IFDEF ANDROID}
+  //FFCM: TFirebaseMessaging;
+  procedure FCMAuthorizationResultHandler(Sender:TObject; const aGranted:Boolean);
+  procedure FCMTokenReceivedHandler(Sender:TObject;const AToken:string);
+  procedure FCMMessageReceibedHandle(Sender:TObject;const APayload:Tstrings);
+
+  {$ENDIF}
+
+
   end;
 
 var
@@ -56,8 +73,44 @@ implementation
 
 { TFrm_Principal }
 
+{$IFDEF ANDROID}
+
+procedure TFrm_Principal.FCMAuthorizationResultHandler(Sender:TObject; const aGranted:Boolean);
+begin
+
+end;
+
+procedure TFrm_Principal.FCMTokenReceivedHandler(Sender:TObject;const AToken:string);
+begin
+ Edit1.text:= AToken;
+ Showmenssage(AToken);
+end;
+
+procedure TFrm_Principal.FCMMessageReceibedHandle(Sender:TObject;const APayload:Tstrings);
+var
+ x:integer;
+begin
+ for x := 0 to APayload.count -1 do
+ begin
+  Showmenssage(APayload[x]);
+ end;
+end;
+
+{$ENDIF}
+
+
 procedure TFrm_Principal.FormShow(Sender: TObject);
 begin
+
+ //notificação push..
+ {$IFDEF ANDROIND}
+ FFCM: Tfirebasemessaging.Create;
+ FFCM.onAutorizationResul:= FCMAuthorizationResultHandler;
+ FFCM.OnTokenReceived:= FCMTokenReceivedHandler;
+ FFCM.onMenssageReceived:= FCMMessageReceivedHandler;
+ FFCM.Connect;
+ {$ENDIF}
+
  SelecionaTab(1);
 end;
 
