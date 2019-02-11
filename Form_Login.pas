@@ -6,7 +6,7 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.TabControl,
   FMX.Objects, FMX.Controls.Presentation, FMX.StdCtrls, FMX.Edit, FMX.Layouts,
-  System.Actions, FMX.ActnList;
+  System.Actions, FMX.ActnList, FMX.Gestures;
 
 type
   TFrm_Login = class(TForm)
@@ -47,9 +47,11 @@ type
     ActionList1: TActionList;
     actTabLogin: TChangeTabAction;
     actTabCadastro: TChangeTabAction;
+    GestureManager1: TGestureManager;
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure lblRodapeClick(Sender: TObject);
+    procedure Label2Click(Sender: TObject);
   private
   public
     { Public declarations }
@@ -61,6 +63,8 @@ var
 implementation
 
 {$R *.fmx}
+
+uses Form_Principal;
 
 procedure TFrm_Login.FormCreate(Sender: TObject);
 begin
@@ -74,6 +78,12 @@ begin
  else
  lblRodape.Text:= 'Já tem uma conta? Faça o login aqui.';
 
+end;
+
+procedure TFrm_Login.Label2Click(Sender: TObject);
+begin
+ Application.CreateForm(TFrm_Principal,Frm_Principal);
+ Frm_Principal.show;
 end;
 
 procedure TFrm_Login.lblRodapeClick(Sender: TObject);
