@@ -77,7 +77,7 @@ implementation
 
 procedure TFrm_Principal.FCMAuthorizationResultHandler(Sender:TObject; const aGranted:Boolean);
 begin
-
+ //kkkk
 end;
 
 procedure TFrm_Principal.FCMTokenReceivedHandler(Sender:TObject;const AToken:string);
