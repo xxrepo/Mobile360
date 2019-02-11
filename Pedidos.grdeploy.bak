@@ -1,0 +1,17 @@
+{
+  "Configurations" : ["Release", "Debug"],
+  "iOS" : [],
+  "Android" : [{
+      "LocalName" : "Resources\\strings.xml",
+      "RemoteDir" : ".res\\values\\",
+      "Configurations" : [],
+      "IsDirectory" : false,
+      "IncludeSubDirectories" : false
+    }, {
+      "LocalName" : "KastriFree-master\\KastriFree-master\\ThirdParty\\PlayServices\\Android\\res",
+      "RemoteDir" : ".\\res",
+      "Configurations" : [],
+      "IsDirectory" : true,
+      "IncludeSubDirectories" : true
+    }]
+}
