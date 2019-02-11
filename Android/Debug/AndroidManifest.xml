@@ -6,8 +6,8 @@
         android:versionName="1.0.0"
         android:installLocation="auto">
 
-    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="26" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="14" />
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -27,7 +27,7 @@
         android:hardwareAccelerated="true"
         android:resizeableActivity="false">
 
-        
+        <%provider%>
         
         
         <!-- Our activity is a subclass of the built-in NativeActivity framework class.
