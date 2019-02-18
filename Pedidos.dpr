@@ -12,6 +12,7 @@ uses
 
 begin
   Application.Initialize;
+  Application.CreateForm(TFrm_MenuPrincipal, Frm_MenuPrincipal);
   Application.CreateForm(TFrm_Inicial, Frm_Inicial);
   Application.CreateForm(TFrm_Principal, Frm_Principal);
   Application.Run;

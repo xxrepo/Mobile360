@@ -11,7 +11,360 @@
     </PropertyGroup>
     <ItemGroup Condition="'$(Platform)'=='iOSDevice64'"/>
     <ItemGroup Condition="'$(Platform)'=='Win64'"/>
-    <ItemGroup Condition="'$(Platform)'=='iOSDevice32'"/>
+    <ItemGroup Condition="'$(Platform)'=='iOSDevice32'">
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_87x87.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_87x87.png</RemoteName>
+            <DeployClass>iPhone_AppIcon87</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch1536x2048</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2008.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x.png</RemoteName>
+            <DeployClass>iPad_Launch1536</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice32\Debug\Pedidos.entitlements" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\..\</RemoteDir>
+            <RemoteName>Pedidos.entitlements</RemoteName>
+            <DeployClass>ProjectiOSEntitlements</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_80x80.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_80x80.png</RemoteName>
+            <DeployClass>iPhone_Spotlight80</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_750x1334.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>Default-667h@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch750</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice32\Debug\Pedidos" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>Pedidos</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_40x40.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+            <DeployClass>iPad_SpotLight40</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_80x80.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_80x80.png</RemoteName>
+            <DeployClass>iPad_SpotLight80</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1496.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x.png</RemoteName>
+            <DeployClass>iPad_Launch2048</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_144x144.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_144x144.png</RemoteName>
+            <DeployClass>iPad_AppIcon144</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1536.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch2048x1536</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_58x58.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_58x58.png</RemoteName>
+            <DeployClass>iPhone_Spotlight58</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_180x180.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_180x180.png</RemoteName>
+            <DeployClass>iPhone_AppIcon180</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_60x60.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_60x60.png</RemoteName>
+            <DeployClass>iPhone_AppIcon60</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_29x29.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>FM_SettingIcon_29x29.png</RemoteName>
+            <DeployClass>iPad_Setting29</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x748.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>Default-Landscape.png</RemoteName>
+            <DeployClass>iPad_Launch1024</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_76x76.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_76x76.png</RemoteName>
+            <DeployClass>iPad_AppIcon76</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice32\Debug\Pedidos.dSYM" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF\</RemoteDir>
+            <RemoteName>Pedidos</RemoteName>
+            <DeployClass>ProjectiOSDeviceDebug</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_72x72.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_72x72.png</RemoteName>
+            <DeployClass>iPad_AppIcon72</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_100x100.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_100x100.png</RemoteName>
+            <DeployClass>iPad_SpotLight100</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_2208x1242.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>Default-Landscape-736h@3x.png</RemoteName>
+            <DeployClass>iPhone_Launch2208</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice32\Debug\Pedidos.info.plist" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <DeployClass>ProjectiOSInfoPList</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_320x480.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>Default.png</RemoteName>
+            <DeployClass>iPhone_Launch320</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1004.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>Default~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch768</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_152x152.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_152x152.png</RemoteName>
+            <DeployClass>iPad_AppIcon152</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1024.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>Default-Portrait~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch768x1024</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_120x120.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_120x120.png</RemoteName>
+            <DeployClass>iPhone_AppIcon120</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_57x57.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_57x57.png</RemoteName>
+            <DeployClass>iPhone_AppIcon57</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice32\Debug\ResourceRules.plist" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>ResourceRules.plist</RemoteName>
+            <DeployClass>ProjectiOSDeviceResourceRules</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_29x29.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_29x29.png</RemoteName>
+            <DeployClass>iPhone_Spotlight29</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x1136.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>Default-568h@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch640x1136</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_40x40.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+            <DeployClass>iPhone_Spotlight40</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_50x50.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_50x50.png</RemoteName>
+            <DeployClass>iPad_SpotLight50</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x960.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>Default@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch640</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_58x58.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>FM_SettingIcon_58x58.png</RemoteName>
+            <DeployClass>iPad_Setting58</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_1242x2208.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>Default-736h@3x.png</RemoteName>
+            <DeployClass>iPhone_Launch1242</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_114x114.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_114x114.png</RemoteName>
+            <DeployClass>iPhone_AppIcon114</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x768.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos.app\</RemoteDir>
+            <RemoteName>Default-Landscape~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch1024x768</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
     <ItemGroup Condition="'$(Platform)'=='Win32'">
         <DeployFile Include="Win32\Debug\Pedidos.exe" Condition="'$(Config)'=='Debug'">
             <RemoteDir>Pedidos\</RemoteDir>
@@ -46,11 +399,758 @@
         </DeployFile>
     </ItemGroup>
     <ItemGroup Condition="'$(Platform)'=='Android'">
-        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_36x36.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>Pedidos\res\drawable-ldpi\</RemoteDir>
-            <RemoteName>ic_launcher.png</RemoteName>
-            <DeployClass>Android_LauncherIcon36</DeployClass>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-az\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-az\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-el\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-el\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-mn\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-mn\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-fa\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-fa\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-tl\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-tl\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-sl\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-sl\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable\common_google_signin_btn_text_dark.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_dark.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_426x320.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-small\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage426</DeployClass>
             <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-pl\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-pl\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-pt-rPT\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-pt-rPT\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-ms\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-ms\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-xhdpi-v4\common_google_signin_btn_text_dark_normal_background.9.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_dark_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-xxhdpi-v4\googleg_disabled_color_18.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-xxhdpi-v4\</RemoteDir>
+            <RemoteName>googleg_disabled_color_18.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-az\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-az\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(NDKBasePath)\prebuilt\android-arm\gdbserver\gdbserver" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>gdbserver</RemoteName>
+            <DeployClass>AndroidGDBServer</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable\common_google_signin_btn_text_light_focused.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_light_focused.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-mdpi-v4\googleg_disabled_color_18.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>googleg_disabled_color_18.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable\common_google_signin_btn_icon_light_focused.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable\</RemoteDir>
+            <RemoteName>common_google_signin_btn_icon_light_focused.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android\Debug\splash_image_def.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable\</RemoteDir>
+            <RemoteName>splash_image_def.xml</RemoteName>
+            <DeployClass>AndroidSplashImageDef</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-eu\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-eu\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable\common_google_signin_btn_text_light_normal.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_light_normal.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-hdpi-v4\googleg_disabled_color_18.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>googleg_disabled_color_18.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-vi\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-vi\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable\common_google_signin_btn_icon_dark_focused.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable\</RemoteDir>
+            <RemoteName>common_google_signin_btn_icon_dark_focused.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\color\common_google_signin_btn_text_light.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\color\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_light.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-km\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-km\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-sk\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-sk\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable\common_google_signin_btn_icon_dark.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable\</RemoteDir>
+            <RemoteName>common_google_signin_btn_icon_dark.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-lo\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-lo\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\color\common_google_signin_btn_text_dark.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\color\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_dark.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-kn\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-kn\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable\common_google_signin_btn_text_light.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_light.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-xxhdpi-v4\common_google_signin_btn_icon_light_normal_background.9.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-xxhdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_icon_light_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\color\common_google_signin_btn_text_light.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\color\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_light.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable\common_google_signin_btn_icon_light.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable\</RemoteDir>
+            <RemoteName>common_google_signin_btn_icon_light.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-xhdpi-v4\common_google_signin_btn_icon_dark_normal_background.9.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_icon_dark_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-es-rUS\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-es-rUS\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-th\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-th\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-iw\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-iw\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-uz\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-uz\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-xhdpi-v4\common_google_signin_btn_text_dark_normal_background.9.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_dark_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_48x48.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-mdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon48</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-nb\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-nb\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_426x320.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-small\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage426</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable\common_google_signin_btn_text_dark_focused.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_dark_focused.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable\common_google_signin_btn_icon_dark.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable\</RemoteDir>
+            <RemoteName>common_google_signin_btn_icon_dark.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-xxhdpi-v4\common_google_signin_btn_text_dark_normal_background.9.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-xxhdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_dark_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-ar\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-ar\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable\common_google_signin_btn_icon_dark_focused.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable\</RemoteDir>
+            <RemoteName>common_google_signin_btn_icon_dark_focused.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_640x480.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-large\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage640</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-mr\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-mr\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-ta\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-ta\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-af\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-af\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\strings.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values\</RemoteDir>
+            <RemoteName>strings.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-in\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-in\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-mr\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-mr\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-ko\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-ko\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android\Debug\styles.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values\</RemoteDir>
+            <RemoteName>styles.xml</RemoteName>
+            <DeployClass>AndroidSplashStyles</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-lt\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-lt\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-eu\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-eu\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-gl\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-gl\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-xxhdpi-v4\common_google_signin_btn_icon_dark_normal_background.9.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-xxhdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_icon_dark_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable\common_google_signin_btn_text_dark_normal.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_dark_normal.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-pt-rPT\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-pt-rPT\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-ru\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-ru\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-zh-rTW\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-zh-rTW\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-hdpi-v4\common_full_open_on_phone.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>common_full_open_on_phone.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable\common_google_signin_btn_text_dark_normal.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_dark_normal.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-xxhdpi-v4\googleg_standard_color_18.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-xxhdpi-v4\</RemoteDir>
+            <RemoteName>googleg_standard_color_18.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-xhdpi-v4\common_full_open_on_phone.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>common_full_open_on_phone.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-cs\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-cs\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-bg\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-bg\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-sl\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-sl\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-kn\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-kn\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-sv\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-sv\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-bs\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-bs\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-mdpi-v4\common_google_signin_btn_icon_light_normal_background.9.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_icon_light_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-ms\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-ms\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-sr\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-sr\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-de\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-de\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-hi\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-hi\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-bg\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-bg\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable\common_google_signin_btn_text_light.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_light.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-kk\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-kk\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
@@ -65,6 +1165,24 @@
             <Overwrite>True</Overwrite>
             <Required>True</Required>
         </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-gu\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-gu\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-th\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-th\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
         <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_72x72.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>Pedidos\res\drawable-hdpi\</RemoteDir>
             <RemoteName>ic_launcher.png</RemoteName>
@@ -74,38 +1192,47 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_640x480.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>Pedidos\res\drawable-large\</RemoteDir>
-            <RemoteName>splash_image.png</RemoteName>
-            <DeployClass>Android_SplashImage640</DeployClass>
-            <Operation>1</Operation>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable\common_google_signin_btn_icon_disabled.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable\</RemoteDir>
+            <RemoteName>common_google_signin_btn_icon_disabled.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_960x720.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>Pedidos\res\drawable-xlarge\</RemoteDir>
-            <RemoteName>splash_image.png</RemoteName>
-            <DeployClass>Android_SplashImage960</DeployClass>
-            <Operation>1</Operation>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-ka\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-ka\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_426x320.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>Pedidos\res\drawable-small\</RemoteDir>
-            <RemoteName>splash_image.png</RemoteName>
-            <DeployClass>Android_SplashImage426</DeployClass>
-            <Operation>1</Operation>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-si\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-si\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_48x48.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>Pedidos\res\drawable-mdpi\</RemoteDir>
-            <RemoteName>ic_launcher.png</RemoteName>
-            <DeployClass>Android_LauncherIcon48</DeployClass>
-            <Operation>1</Operation>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-hdpi-v4\common_google_signin_btn_icon_light_normal_background.9.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_icon_light_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-xhdpi-v4\common_full_open_on_phone.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>common_full_open_on_phone.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
@@ -119,38 +1246,74 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="Android\Debug\classes.dex" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>Pedidos\classes\</RemoteDir>
-            <RemoteName>classes.dex</RemoteName>
-            <DeployClass>AndroidClassesDexFile</DeployClass>
-            <Operation>1</Operation>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-ca\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-ca\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="$(NDKBasePath)\prebuilt\android-arm\gdbserver\gdbserver" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>Pedidos\library\lib\armeabi-v7a\</RemoteDir>
-            <RemoteName>gdbserver</RemoteName>
-            <DeployClass>AndroidGDBServer</DeployClass>
-            <Operation>1</Operation>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-zu\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-zu\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="Android\Debug\splash_image_def.xml" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-lv\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-lv\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-es-rUS\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-es-rUS\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable\common_google_signin_btn_icon_light_normal.xml" Condition="'$(Config)'=='Release'">
             <RemoteDir>Pedidos\res\drawable\</RemoteDir>
-            <RemoteName>splash_image_def.xml</RemoteName>
-            <DeployClass>AndroidSplashImageDef</DeployClass>
-            <Operation>1</Operation>
+            <RemoteName>common_google_signin_btn_icon_light_normal.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="Android\Debug\styles.xml" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>Pedidos\res\values\</RemoteDir>
-            <RemoteName>styles.xml</RemoteName>
-            <DeployClass>AndroidSplashStyles</DeployClass>
-            <Operation>1</Operation>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-in\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-in\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-xxhdpi-v4\common_google_signin_btn_text_dark_normal_background.9.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-xxhdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_dark_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-ne\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-ne\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
@@ -159,15 +1322,6 @@
             <RemoteDir>Pedidos\</RemoteDir>
             <RemoteName>AndroidManifest.xml</RemoteName>
             <DeployClass>ProjectAndroidManifest</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="$(BDS)\lib\android\debug\armeabi\libnative-activity.so" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>Pedidos\library\lib\armeabi\</RemoteDir>
-            <RemoteName>libPedidos.so</RemoteName>
-            <DeployClass>AndroidLibnativeArmeabiFile</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -182,6 +1336,340 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-hdpi-v4\common_google_signin_btn_text_dark_normal_background.9.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_dark_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-mdpi-v4\common_google_signin_btn_icon_dark_normal_background.9.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_icon_dark_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-hdpi-v4\googleg_standard_color_18.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>googleg_standard_color_18.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-sk\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-sk\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_96x96.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-xhdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon96</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-de\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-de\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-xhdpi-v4\googleg_disabled_color_18.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>googleg_disabled_color_18.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-hdpi-v4\common_google_signin_btn_text_dark_normal_background.9.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_dark_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-mdpi-v4\common_google_signin_btn_text_dark_normal_background.9.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_dark_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android\Release\classes.dex" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\classes\</RemoteDir>
+            <RemoteName>classes.dex</RemoteName>
+            <DeployClass>AndroidClassesDexFile</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-pa\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-pa\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable\common_google_signin_btn_icon_dark_normal.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable\</RemoteDir>
+            <RemoteName>common_google_signin_btn_icon_dark_normal.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_960x720.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-xlarge\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage960</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable\common_google_signin_btn_icon_disabled.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable\</RemoteDir>
+            <RemoteName>common_google_signin_btn_icon_disabled.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable\common_google_signin_btn_text_dark_focused.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_dark_focused.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-bn\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-bn\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-en-rGB\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-en-rGB\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-mk\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-mk\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-pt-rBR\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-pt-rBR\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-te\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-te\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-zh-rCN\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-zh-rCN\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_960x720.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-xlarge\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage960</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_72x72.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-hdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon72</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-mdpi-v4\common_google_signin_btn_icon_dark_normal_background.9.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_icon_dark_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-xhdpi-v4\googleg_standard_color_18.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>googleg_standard_color_18.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-mk\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-mk\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-mdpi-v4\common_google_signin_btn_text_light_normal_background.9.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_light_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-cs\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-cs\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(NDKBasePath)\prebuilt\android-arm\gdbserver\gdbserver" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>gdbserver</RemoteName>
+            <DeployClass>AndroidGDBServer</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android\Release\libPedidos.so" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>libPedidos.so</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-ne\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-ne\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-pl\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-pl\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-hu\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-hu\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-sr\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-sr\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-lo\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-lo\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-it\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-it\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_96x96.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-xhdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon96</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
         <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_470x320.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>Pedidos\res\drawable-normal\</RemoteDir>
             <RemoteName>splash_image.png</RemoteName>
@@ -191,10 +1679,604 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_96x96.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>Pedidos\res\drawable-xhdpi\</RemoteDir>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-hdpi-v4\common_full_open_on_phone.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>common_full_open_on_phone.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-xhdpi-v4\common_google_signin_btn_icon_dark_normal_background.9.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_icon_dark_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-xhdpi-v4\common_google_signin_btn_icon_light_normal_background.9.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_icon_light_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable\common_google_signin_btn_text_dark.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_dark.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-xxhdpi-v4\googleg_disabled_color_18.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-xxhdpi-v4\</RemoteDir>
+            <RemoteName>googleg_disabled_color_18.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-lt\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-lt\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-hdpi-v4\googleg_disabled_color_18.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>googleg_disabled_color_18.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-xhdpi-v4\common_google_signin_btn_icon_light_normal_background.9.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_icon_light_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-hdpi-v4\common_google_signin_btn_icon_light_normal_background.9.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_icon_light_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-be\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-be\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-gu\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-gu\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-bn\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-bn\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-my\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-my\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-ro\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-ro\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-hdpi-v4\common_google_signin_btn_icon_dark_normal_background.9.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_icon_dark_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-uk\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-uk\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-hr\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-hr\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-mdpi-v4\googleg_standard_color_18.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>googleg_standard_color_18.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-da\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-da\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-es\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-es\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-pa\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-pa\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-et\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-et\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-mdpi-v4\common_google_signin_btn_text_dark_normal_background.9.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_dark_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-b+sr+Latn\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-b+sr+Latn\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_470x320.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-normal\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage470</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-tl\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-tl\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-am\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-am\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\color\common_google_signin_btn_tint.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\color\</RemoteDir>
+            <RemoteName>common_google_signin_btn_tint.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable\common_google_signin_btn_icon_light.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable\</RemoteDir>
+            <RemoteName>common_google_signin_btn_icon_light.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-da\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-da\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-gl\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-gl\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-hu\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-hu\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-xhdpi-v4\common_google_signin_btn_text_light_normal_background.9.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_light_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-sw\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-sw\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-et\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-et\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-nl\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-nl\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-fa\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-fa\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-be\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-be\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-hi\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-hi\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android\Release\styles.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values\</RemoteDir>
+            <RemoteName>styles.xml</RemoteName>
+            <DeployClass>AndroidSplashStyles</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_36x36.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-ldpi\</RemoteDir>
             <RemoteName>ic_launcher.png</RemoteName>
-            <DeployClass>Android_LauncherIcon96</DeployClass>
+            <DeployClass>Android_LauncherIcon36</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-es\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-es\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable\common_google_signin_btn_text_disabled.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_disabled.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-fi\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-fi\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\lib\android\debug\armeabi\libnative-activity.so" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\library\lib\armeabi\</RemoteDir>
+            <RemoteName>libPedidos.so</RemoteName>
+            <DeployClass>AndroidLibnativeArmeabiFile</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-si\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-si\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-xxhdpi-v4\common_google_signin_btn_icon_dark_normal_background.9.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-xxhdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_icon_dark_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-ar\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-ar\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-ko\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-ko\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-ml\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-ml\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-mdpi-v4\common_google_signin_btn_text_light_normal_background.9.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_light_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_48x48.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-mdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon48</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-hy\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-hy\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android\Debug\classes.dex" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\classes\</RemoteDir>
+            <RemoteName>classes.dex</RemoteName>
+            <DeployClass>AndroidClassesDexFile</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-km\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-km\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-my\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-my\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_144x144.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-xxhdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon144</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-xxhdpi-v4\common_google_signin_btn_icon_light_normal_background.9.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-xxhdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_icon_light_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-ja\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-ja\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-ro\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-ro\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-xxhdpi-v4\googleg_standard_color_18.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-xxhdpi-v4\</RemoteDir>
+            <RemoteName>googleg_standard_color_18.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-xhdpi-v4\common_google_signin_btn_text_light_normal_background.9.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_light_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-fi\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-fi\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable\common_google_signin_btn_icon_dark_normal.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable\</RemoteDir>
+            <RemoteName>common_google_signin_btn_icon_dark_normal.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\color\common_google_signin_btn_text_dark.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\color\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_dark.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_640x480.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-large\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage640</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -209,20 +2291,659 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
+        <DeployFile Include="Android\Release\AndroidManifest.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\</RemoteDir>
+            <RemoteName>AndroidManifest.xml</RemoteName>
+            <DeployClass>ProjectAndroidManifest</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-bs\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-bs\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-ur\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-ur\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-nb\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-nb\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_36x36.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-ldpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon36</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-it\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-it\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android\Release\splash_image_def.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable\</RemoteDir>
+            <RemoteName>splash_image_def.xml</RemoteName>
+            <DeployClass>AndroidSplashImageDef</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-fr\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-fr\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-hy\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-hy\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-kk\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-kk\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable\common_google_signin_btn_icon_light_normal.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable\</RemoteDir>
+            <RemoteName>common_google_signin_btn_icon_light_normal.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-tr\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-tr\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-mdpi-v4\googleg_standard_color_18.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>googleg_standard_color_18.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-ur\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-ur\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-lv\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-lv\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-zh-rCN\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-zh-rCN\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\color\common_google_signin_btn_tint.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\color\</RemoteDir>
+            <RemoteName>common_google_signin_btn_tint.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-pt-rBR\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-pt-rBR\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-zh-rHK\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-zh-rHK\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-mdpi-v4\common_google_signin_btn_icon_light_normal_background.9.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_icon_light_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-fr-rCA\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-fr-rCA\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-ka\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-ka\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-vi\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-vi\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\strings.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values\</RemoteDir>
+            <RemoteName>strings.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-ja\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-ja\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-zu\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-zu\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable\common_google_signin_btn_text_disabled.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_disabled.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-is\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-is\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable\common_google_signin_btn_text_light_normal.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_light_normal.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\lib\android\debug\armeabi\libnative-activity.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\library\lib\armeabi\</RemoteDir>
+            <RemoteName>libPedidos.so</RemoteName>
+            <DeployClass>AndroidLibnativeArmeabiFile</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-sq\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-sq\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-ta\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-ta\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\lib\android\debug\mips\libnative-activity.so" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\library\lib\mips\</RemoteDir>
+            <RemoteName>libPedidos.so</RemoteName>
+            <DeployClass>AndroidLibnativeMipsFile</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-xxhdpi-v4\common_google_signin_btn_text_light_normal_background.9.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-xxhdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_light_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-iw\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-iw\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-xxhdpi-v4\common_google_signin_btn_text_light_normal_background.9.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-xxhdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_light_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-ky\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-ky\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-uz\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-uz\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-hr\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-hr\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-sq\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-sq\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-xhdpi-v4\googleg_standard_color_18.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>googleg_standard_color_18.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-af\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-af\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-sw\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-sw\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-en-rGB\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-en-rGB\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-ky\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-ky\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-zh-rHK\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-zh-rHK\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-fr\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-fr\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-el\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-el\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-hdpi-v4\common_google_signin_btn_icon_dark_normal_background.9.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_icon_dark_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-mdpi-v4\googleg_disabled_color_18.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>googleg_disabled_color_18.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable\common_google_signin_btn_icon_light_focused.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable\</RemoteDir>
+            <RemoteName>common_google_signin_btn_icon_light_focused.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-ca\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-ca\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-nl\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-nl\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-is\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-is\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-fr-rCA\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-fr-rCA\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-ml\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-ml\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-te\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-te\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-zh-rTW\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-zh-rTW\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-hdpi-v4\common_google_signin_btn_text_light_normal_background.9.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_light_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable\common_google_signin_btn_text_light_focused.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_light_focused.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-am\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-am\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-ru\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-ru\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-hdpi-v4\common_google_signin_btn_text_light_normal_background.9.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>common_google_signin_btn_text_light_normal_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-hdpi-v4\googleg_standard_color_18.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>googleg_standard_color_18.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-mn\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-mn\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-sv\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-sv\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\drawable-xhdpi-v4\googleg_disabled_color_18.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>googleg_disabled_color_18.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-uk\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-uk\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-b+sr+Latn\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Pedidos\res\values-b+sr+Latn\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Componentes\KastriFree-master\ThirdParty\PlayServices\Android\res\values-tr\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Pedidos\res\values-tr\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
     </ItemGroup>
     <ItemGroup Condition="'$(Platform)'=='iOSSimulator'">
-        <DeployFile Include="$(BDS)\Redist\iossimulator\libPCRE.dylib">
+        <DeployFile Include="$(BDS)\Redist\iossimulator\libcgunwind.1.0.dylib">
             <RemoteDir>Pedidos.app\</RemoteDir>
-            <RemoteName>libPCRE.dylib</RemoteName>
+            <RemoteName>libcgunwind.1.0.dylib</RemoteName>
             <DeployClass>DependencyModule</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="$(BDS)\Redist\iossimulator\libcgunwind.1.0.dylib">
+        <DeployFile Include="$(BDS)\Redist\iossimulator\libPCRE.dylib">
             <RemoteDir>Pedidos.app\</RemoteDir>
-            <RemoteName>libcgunwind.1.0.dylib</RemoteName>
+            <RemoteName>libPCRE.dylib</RemoteName>
             <DeployClass>DependencyModule</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>

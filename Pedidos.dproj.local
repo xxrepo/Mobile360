@@ -9,26 +9,39 @@
     <Transaction>2019/02/01 17:33:12.000.868,C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\Form_MenuPrincipal.fmx=C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\Unit1.fmx</Transaction>
     <Transaction>2019/02/01 17:33:12.000.868,C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\Form_MenuPrincipal.pas=C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\Unit1.pas</Transaction>
     <Transaction>2019/02/10 14:33:12.000.803,=C:\GABRIEL\Projetos\Sistemas\Mobile360\Unit1.pas</Transaction>
-    <Transaction>2019/02/10 14:33:53.000.796,C:\GABRIEL\Projetos\Sistemas\Mobile360\Unit1.fmx=C:\GABRIEL\Projetos\Sistemas\Mobile360\Form_Login.fmx</Transaction>
     <Transaction>2019/02/10 14:33:53.000.796,C:\GABRIEL\Projetos\Sistemas\Mobile360\Unit1.pas=C:\GABRIEL\Projetos\Sistemas\Mobile360\Form_Login.pas</Transaction>
+    <Transaction>2019/02/10 14:33:53.000.796,C:\GABRIEL\Projetos\Sistemas\Mobile360\Unit1.fmx=C:\GABRIEL\Projetos\Sistemas\Mobile360\Form_Login.fmx</Transaction>
     <Transaction>2019/02/10 16:06:03.000.410,=C:\GABRIEL\Projetos\Sistemas\Mobile360\Unit1.pas</Transaction>
     <Transaction>2019/02/10 16:06:51.000.086,=C:\GABRIEL\Projetos\Sistemas\Mobile360\Unit1.pas</Transaction>
     <Transaction>2019/02/10 16:07:25.000.741,C:\GABRIEL\Projetos\Sistemas\Mobile360\Form_Principal.fmx=C:\GABRIEL\Projetos\Sistemas\Mobile360\Unit1.fmx</Transaction>
     <Transaction>2019/02/10 16:07:25.000.741,C:\GABRIEL\Projetos\Sistemas\Mobile360\Form_Principal.pas=C:\GABRIEL\Projetos\Sistemas\Mobile360\Unit1.pas</Transaction>
+    <Transaction>2019/02/11 15:29:51.000.447,=C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\API26\firebase-iid-16.2.0.jar</Transaction>
     <Transaction>2019/02/11 15:29:51.000.471,=C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\API26\firebase-messaging-17.1.0.jar</Transaction>
-    <Transaction>2019/02/11 15:29:51.000.506,=C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\API26\play-services-r-15.0.1.jar</Transaction>
     <Transaction>2019/02/11 15:29:51.000.480,=C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\API26\play-services-base-15.0.1.jar</Transaction>
     <Transaction>2019/02/11 15:29:51.000.516,=C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\API26\play-services-tasks-15.0.1.jar</Transaction>
-    <Transaction>2019/02/11 15:29:51.000.498,=C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\API26\play-services-location-15.0.1.jar</Transaction>
-    <Transaction>2019/02/11 15:29:51.000.489,=C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\API26\play-services-basement-15.0.1.jar</Transaction>
     <Transaction>2019/02/11 15:29:51.000.454,=C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\API26\firebase-iid-interop-16.0.0.jar</Transaction>
-    <Transaction>2019/02/11 15:29:51.000.463,=C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\API26\firebase-measurement-connector-17.0.0.jar</Transaction>
-    <Transaction>2019/02/11 15:29:51.000.447,=C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\API26\firebase-iid-16.2.0.jar</Transaction>
+    <Transaction>2019/02/11 15:29:51.000.489,=C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\API26\play-services-basement-15.0.1.jar</Transaction>
     <Transaction>2019/02/11 15:29:51.000.438,=C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\API26\firebase-common-16.0.0.jar</Transaction>
-    <Transaction>2019/02/11 15:29:51.000.431,=C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\API26\firebase-analytics-16.0.1.jar</Transaction>
     <Transaction>2019/02/11 15:29:51.000.422,=C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\API26\dw-firebase.jar</Transaction>
+    <Transaction>2019/02/11 15:29:51.000.506,=C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\API26\play-services-r-15.0.1.jar</Transaction>
+    <Transaction>2019/02/11 15:29:51.000.498,=C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\API26\play-services-location-15.0.1.jar</Transaction>
+    <Transaction>2019/02/11 15:29:51.000.431,=C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\API26\firebase-analytics-16.0.1.jar</Transaction>
+    <Transaction>2019/02/11 15:29:51.000.463,=C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\API26\firebase-measurement-connector-17.0.0.jar</Transaction>
+    <Transaction>2019/02/12 17:48:46.000.504,C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\API26\dw-firebase.jar=</Transaction>
+    <Transaction>2019/02/12 17:48:46.000.796,C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\API26\firebase-common-16.0.0.jar=</Transaction>
+    <Transaction>2019/02/12 17:48:46.000.902,C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\API26\firebase-iid-16.2.0.jar=</Transaction>
+    <Transaction>2019/02/12 17:48:46.000.689,C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\API26\firebase-analytics-16.0.1.jar=</Transaction>
+    <Transaction>2019/02/12 17:48:47.000.749,C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\API26\play-services-tasks-15.0.1.jar=</Transaction>
+    <Transaction>2019/02/12 17:48:47.000.113,C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\API26\firebase-measurement-connector-17.0.0.jar=</Transaction>
+    <Transaction>2019/02/12 17:48:47.000.643,C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\API26\play-services-r-15.0.1.jar=</Transaction>
+    <Transaction>2019/02/12 17:48:47.000.008,C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\API26\firebase-iid-interop-16.0.0.jar=</Transaction>
+    <Transaction>2019/02/12 17:48:47.000.220,C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\API26\firebase-messaging-17.1.0.jar=</Transaction>
+    <Transaction>2019/02/12 17:48:47.000.431,C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\API26\play-services-basement-15.0.1.jar=</Transaction>
+    <Transaction>2019/02/12 17:48:47.000.324,C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\API26\play-services-base-15.0.1.jar=</Transaction>
+    <Transaction>2019/02/12 17:48:47.000.536,C:\Desenvolvimento\Sistemas Delphi DX\Mobile360\API26\play-services-location-15.0.1.jar=</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
 		<NoProfile iOSSimulator="iPhone5" Android="LGH818d554ee08"/>
 	</ActiveMobileDevice>
+	<BT_BuildType>Debug</BT_BuildType>
 </BorlandProject>
